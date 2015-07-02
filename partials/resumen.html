@@ -1,0 +1,21 @@
+<div class="row" ng-controller="ResumenCrtl">
+	<div class="col-md-12">
+		<h2>{{titlePage}}</h2>
+		<div class="panel panel-default" id="print">
+			<div class="panel-heading">
+				<h3 class="panel-title">Resumen del servicio</h3>
+			</div>	
+			<div class="panel-body">
+				<p><span class="item">Servicio: </span>{{tipo}}</p>
+				<p><span class="item">Origen: </span>{{origen}}</p>
+		    	<p><span class="item">Destino: </span>{{destino}}</p>
+				<p><span class="item">Empresa: </span>{{empresa}}</p>
+		    	<p><span class="item">Valor: </span>{{valor}}</p>
+	
+				
+				<button class="btn btn-primary">Enviar servicio</button>
+				<button ng-click="print('print')" class="btn btn-primary">Print</button>
+			</div>
+		</div>
+	</div>
+</div>
